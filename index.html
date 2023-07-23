@@ -17,17 +17,17 @@
     <!-- custome style -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <style>
-        .font-manroope{
+        .font-manroope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
@@ -35,9 +35,33 @@
 
 <body class="font-manroope">
     <header class="container mx-auto border border-blue-500">
-        
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-7xl font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+                <div>
+                    <img src="./images/banner.png" class="max-w-sm" />
+                    <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+                        <div>
+                            <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl font-extrabold">5.00</h1>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
+    <main class="container mx-auto">
 
     </main>
     <footer>
