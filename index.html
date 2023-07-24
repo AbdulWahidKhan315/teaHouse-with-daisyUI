@@ -20,7 +20,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradiant-start': '#FF8938',
+                        'gradiant-end': '#F00',
                     }
                 }
             }
@@ -34,9 +35,9 @@
 </head>
 
 <body class="font-manroope">
-    <header class="container mx-auto border border-blue-500">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row">
+    <header class="container mx-auto">
+        <div class="my-20 p-5 lg:p-0">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
                 <div>
                     <h1 class="text-7xl font-extrabold">
                         It's good <br>
@@ -44,10 +45,10 @@
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradiant-start to-gradiant-end text-white">Explore More <i class="fa-solid fa-arrow-trend-up"></i></button>
                 </div>
                 <div>
-                    <img src="./images/banner.png" class="max-w-sm" />
+                    <img src="./images/banner.png" class="" />
                     <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
                         <div>
                             <i class="fa-solid fa-star text-4xl text-amber-400"></i>
@@ -129,7 +130,7 @@
         </section>
         <!-- super client section -->
         <section
-            class="my-24 bg-gradient-to-r from-[#FF8938] to-[#F00] flex flex-col md:flex-row gap-12 rounded-xl lg:px-16 px-6 py-24">
+            class="my-24 bg-gradient-to-r from-gradiant-start to-gradiant-end flex flex-col md:flex-row gap-12 rounded-xl lg:px-16 px-6 py-24">
             <div class="flex justify-center items-center lg:pr-28">
                 <div class="space-y-5 text-white">
                     <h1 class="text-5xl font-extrabold">Meet Our Super <br> Clients</h1>
@@ -143,7 +144,8 @@
             <div class="relative">
                 <!-- review next -->
                 <div class="p-10 bg-white rounded-xl z-10 relative mb-16 opacity-40">
-                    <img class="absolute -left-5 -top-5 border-4 rounded-full bg-white" src="./images/client.png" alt="">
+                    <img class="absolute -left-5 -top-5 border-4 rounded-full bg-white" src="./images/client.png"
+                        alt="">
                     <p class="text-[#777]">We are providing the best and suitable home insurance services for the people
                         who
                         are interested to treatment</p>
@@ -155,7 +157,8 @@
                 </div>
                 <!-- review current -->
                 <div class="p-10 bg-white rounded-xl z-20 absolute top-40 lg:-left-40 lg:w-[460px]">
-                    <img class="absolute -left-5 -top-5 border-4 rounded-full bg-white" src="./images/client.png" alt="">
+                    <img class="absolute -left-5 -top-5 border-4 rounded-full bg-white" src="./images/client.png"
+                        alt="">
                     <p class="text-[#777]">We are providing the best and suitable home insurance services for the people
                         who are interested to treatment</p>
                     <h3 class="font-bold mt-5">Ilham Yuda</h3>
@@ -166,7 +169,8 @@
                 </div>
                 <!-- review previous -->
                 <div class="p-10 bg-white rounded-xl z-10 relative opacity-40">
-                    <img class="absolute -left-5 -top-5 border-4 rounded-full bg-white" src="./images/client.png" alt="">
+                    <img class="absolute -left-5 -top-5 border-4 rounded-full bg-white" src="./images/client.png"
+                        alt="">
                     <p class="text-[#777]">We are providing the best and suitable home insurance services for the people
                         who
                         are interested to treatment</p>
@@ -219,8 +223,53 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="p-10 bg-gradient-to-r from-orange-100 to-red-100 text-base-content lg:px-56">
+        <div class="flex justify-between my-10 items-center flex-col lg:flex-row">
+            <div>
+                <img src="./images/cup.png" alt="">
+            </div>
+            <p class="lg:mr-52">
+                Ready to get strated?
+                <button class="btn bg-gradient-to-r from-gradiant-start to-gradiant-end">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <div>
+                <span class="text-xl font-semibold">Quick Links</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="text-xl font-semibold">Our Service</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="text-xl font-semibold">Help</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="text-2xl font-semibold">Subscribe to our <br> newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com" class="border-b-2 border-black bg-transparent outline-none py-4" />
+                        <button class="btn bg-gradient-to-r from-gradiant-start to-gradiant-end absolute top-0 right-0 rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-16 text-center">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
     </footer>
 </body>
 
